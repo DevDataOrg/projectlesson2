@@ -44,5 +44,29 @@ const a = prompt ('Один из последних просмотренных �
     personalMovieDB.movies[a] = b;
     personalMovieDB.movies[c] = d;
 
+    for (let i = 0; i < 2; i++) {
+        const a = prompt ('Один из последних просмотренных фильмов?', ''),
+              b = prompt ('На сколько оцените его?', '');
+              personalMovieDB.movies[a] = b;  //записываем ответы в базу
+    }
+
     console.log(personalMovieDB);
-    
+
+
+// *
+// **
+// ***
+// ****
+// *****
+// ******
+    let result = '';
+    const lenght = 7;
+    for (let i = 1; i < lenght; i++) {
+
+        for (let j = 0; j < i; j++) {
+            result += "*";
+        }
+        result += '\n'
+    }
+
+    console.log(result);
